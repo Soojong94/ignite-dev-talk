@@ -9,8 +9,8 @@ import CloudStatsSlide from "@/pages/slides/CloudStatsSlide";
 const Index = () => {
   const slides = [
     <HeroSlide />,
-    <RealityCheckSlide />,
     <SpeakerIntroSlide />,
+    <RealityCheckSlide />,
     <SurvivalStrategiesSlide />,
     <ActionPlanSlide />,
     <CloudStatsSlide />
@@ -18,8 +18,8 @@ const Index = () => {
 
   const slideTitles = [
     "AI와 클라우드 시대 개발자 생존 전략",
-    "충격적인 현실 체크",
     "강연자 소개",
+    "충격적인 현실 체크",
     "지금 당장 해야 할 3가지",
     "실전 액션 플랜",
     "클라우드 통계"

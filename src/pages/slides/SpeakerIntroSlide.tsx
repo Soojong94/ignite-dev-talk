@@ -28,18 +28,18 @@ const SpeakerIntroSlide = () => {
                   <CardTitle className="text-2xl font-bold text-center">전문 성과</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div className="grid gap-4">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-gradient-green mb-2">99.9%</div>
-                      <p className="text-lg text-muted-foreground">서비스 안정성</p>
+                  <div className="space-y-4 text-center">
+                    <div className="space-y-2">
+                      <div className="text-xl font-semibold text-gradient-green">클라우드 인프라 설계</div>
+                      <p className="text-muted-foreground">엔터프라이즈 시스템 구축</p>
                     </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-gradient-blue mb-2">30%</div>
-                      <p className="text-lg text-muted-foreground">비용 절감</p>
+                    <div className="space-y-2">
+                      <div className="text-xl font-semibold text-gradient-blue">DevOps 프로세스</div>
+                      <p className="text-muted-foreground">자동화 및 모니터링</p>
                     </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-gradient-orange mb-2">0건</div>
-                      <p className="text-lg text-muted-foreground">보안사고</p>
+                    <div className="space-y-2">
+                      <div className="text-xl font-semibold text-gradient-orange">보안 컨설팅</div>
+                      <p className="text-muted-foreground">클라우드 보안 전략</p>
                     </div>
                   </div>
                 </CardContent>
@@ -72,21 +72,6 @@ const SpeakerIntroSlide = () => {
                     </div>
                   </div>
                   
-                  <div className="pt-4 flex justify-center">
-                    <Button asChild variant="glass" size="lg" className="px-6">
-                      <a 
-                        href="https://cloudrepo.kro.kr/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
-                      >
-                        블로그 방문하기
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </a>
-                    </Button>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>

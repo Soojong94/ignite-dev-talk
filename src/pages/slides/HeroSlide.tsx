@@ -39,28 +39,18 @@ const HeroSlide = () => {
           <span className="text-gradient-purple">진짜 생존 전략</span>
         </h1>
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           <p className="text-2xl md:text-3xl text-muted-foreground font-semibold">
             "2025년, 코드를 짜는 시대는 끝났다"
           </p>
           
           <div className="space-y-2 text-lg md:text-xl">
-            <p className="text-gradient-green font-semibold">현직 MSP SA 김수종</p>
-            <p className="text-muted-foreground">10개 공공기관 클라우드 인프라 관제 전문가</p>
-            <p className="text-gradient-orange font-medium">수동 4시간 → 자동 10분 (96% 업무 자동화)</p>
+            <p className="text-gradient-green font-semibold">김수종</p>
+            <p className="text-muted-foreground">클라우드 솔루션 아키텍트</p>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            사전 등록 알림 받기
-          </Button>
-          <Button variant="glass" size="lg" className="text-lg px-8 py-4">
-            아젠다 보기
-          </Button>
-        </div>
-
-        {/* Scroll indicator */}
+        {/* Navigation hint */}
         <motion.div 
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           initial={{ opacity: 0, y: 10 }}
@@ -68,7 +58,7 @@ const HeroSlide = () => {
           transition={{ delay: 1, duration: 0.5 }}
         >
           <div className="text-xs text-muted-foreground text-center">
-            <p>키보드 화살표 또는 하단 네비게이션으로 이동</p>
+            <p>키보드 화살표 또는 좌측 네비게이션으로 이동</p>
           </div>
         </motion.div>
       </motion.div>

@@ -156,43 +156,44 @@ const PresentationContainer = ({ children, titles }: PresentationContainerProps)
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation Controls */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="glass-card px-6 py-3 flex items-center gap-4">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={previousSlide}
-            disabled={currentSlide === 1}
-            className="hover:bg-white/10"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </Button>
-          
-          <div className="flex items-center gap-2">
-            {Array.from({ length: children.length }, (_, i) => (
-              <button
-                key={i}
-                onClick={() => goToSlide(i + 1)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  i + 1 === currentSlide 
-                    ? 'bg-blue-400 w-6' 
-                    : 'bg-white/30 hover:bg-white/50'
-                }`}
-              />
-            ))}
-          </div>
-
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={nextSlide}
-            disabled={currentSlide === children.length}
-            className="hover:bg-white/10"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </Button>
+      {/* Left Side Navigation */}
+      <div className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50 flex flex-col items-center gap-4">
+        {/* Previous Button */}
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={previousSlide}
+          disabled={currentSlide === 1}
+          className="glass-card hover:bg-white/10 w-10 h-10 p-0"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </Button>
+        
+        {/* Page Indicators */}
+        <div className="flex flex-col items-center gap-2">
+          {Array.from({ length: children.length }, (_, i) => (
+            <button
+              key={i}
+              onClick={() => goToSlide(i + 1)}
+              className={`w-2 h-2 rounded-full transition-all ${
+                i + 1 === currentSlide 
+                  ? 'bg-blue-400 h-6' 
+                  : 'bg-white/30 hover:bg-white/50'
+              }`}
+            />
+          ))}
         </div>
+
+        {/* Next Button */}
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={nextSlide}
+          disabled={currentSlide === children.length}
+          className="glass-card hover:bg-white/10 w-10 h-10 p-0"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </Button>
       </div>
 
       {/* Top Controls */}
