@@ -96,8 +96,19 @@ const ActionPlanSlide = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            className="mt-6 p-4 glass-card neon-glow-violet max-w-4xl mx-auto"
+          >
+            <div className="text-sm text-muted-foreground mb-3">
+              <strong className="text-gradient-violet">SRE (Site Reliability Engineering):</strong> 서비스 안정성과 확장성을 보장하는 엔지니어링 접근법
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
-            className="mt-8 p-6 glass-card neon-glow-green max-w-3xl mx-auto"
+            className="mt-6 p-6 glass-card neon-glow-green max-w-3xl mx-auto"
           >
             <h3 className="text-2xl font-bold text-gradient-green mb-4">핵심 포인트</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">

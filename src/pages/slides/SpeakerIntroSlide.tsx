@@ -59,8 +59,8 @@ const SpeakerIntroSlide = () => {
                 <CardContent className="space-y-6">
                   <div className="space-y-4 text-center">
                     <div className="space-y-2">
-                      <div className="text-xl font-semibold text-gradient-blue">멀티클라우드</div>
-                      <p className="text-muted-foreground">AWS, Azure, GCP</p>
+                      <div className="text-xl font-semibold text-gradient-blue">AWS / Naver Cloud / KT Cloud / NHN</div>
+                      <p className="text-muted-foreground">멀티클라우드 환경 구축</p>
                     </div>
                     <div className="space-y-2">
                       <div className="text-xl font-semibold text-gradient-violet">Kubernetes</div>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, BarChart3, Users, Briefcase, DollarSign } from "lucide-react";
+import { Brain, BarChart3, Users, Briefcase } from "lucide-react";
 
 const RealityCheckSlide = () => {
   const cards = [
@@ -36,14 +36,6 @@ const RealityCheckSlide = () => {
       color: "blue",
       glowClass: "neon-glow-blue"
     },
-    {
-      icon: DollarSign,
-      title: "연봉 현실",
-      stat: "3,000–3,500만원",
-      description: "신입 기준, AI/클라우드 전문가는 더 높음",
-      color: "green",
-      glowClass: "neon-glow-green"
-    }
   ];
 
   return (
@@ -59,7 +51,7 @@ const RealityCheckSlide = () => {
             <span className="text-gradient-green">충격적인 현실 체크</span>
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-5">
+          <div className="grid gap-6 md:grid-cols-4">
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (

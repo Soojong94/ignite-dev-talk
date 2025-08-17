@@ -45,22 +45,10 @@ const HeroSlide = () => {
           </p>
           
           <div className="space-y-2 text-lg md:text-xl">
-            <p className="text-gradient-green font-semibold">김수종</p>
+            <p className="text-gradient-green font-semibold">으뜸정보기술 김수종</p>
             <p className="text-muted-foreground">클라우드 솔루션 아키텍트</p>
           </div>
         </div>
-
-        {/* Navigation hint */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.5 }}
-        >
-          <div className="text-xs text-muted-foreground text-center">
-            <p>키보드 화살표 또는 좌측 네비게이션으로 이동</p>
-          </div>
-        </motion.div>
       </motion.div>
     </div>
   );
