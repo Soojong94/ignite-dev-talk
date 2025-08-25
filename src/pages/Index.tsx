@@ -1,11 +1,17 @@
 import PresentationContainer from "@/components/PresentationContainer";
 import HeroSlide from "@/pages/slides/HeroSlide";
-import RealityCheckSlide from "@/pages/slides/RealityCheckSlide";
 import SpeakerIntroSlide from "@/pages/slides/SpeakerIntroSlide";
+import RealityCheckSlide from "@/pages/slides/RealityCheckSlide";
 import SurvivalStrategiesSlide from "@/pages/slides/SurvivalStrategiesSlide";
 import ActionPlanSlide from "@/pages/slides/ActionPlanSlide";
 import CloudStatsSlide from "@/pages/slides/CloudStatsSlide";
 import ToolsSlide from "@/pages/slides/ToolsSlide";
+import LearningRoadmapSlide from "@/pages/slides/LearningRoadmapSlide";
+import ProjectGuideSlide from "@/pages/slides/ProjectGuideSlide";
+import CertificationStrategySlide from "@/pages/slides/CertificationStrategySlide";
+import CareerPathSlide from "@/pages/slides/CareerPathSlide";
+import FAQSlide from "@/pages/slides/FAQSlide";
+import ResourceHubSlide from "@/pages/slides/ResourceHubSlide";
 
 const Index = () => {
   const slides = [
@@ -15,7 +21,13 @@ const Index = () => {
     <SurvivalStrategiesSlide />,
     <ActionPlanSlide />,
     <CloudStatsSlide />,
-    <ToolsSlide />
+    <ToolsSlide />,
+    <LearningRoadmapSlide />,
+    <ProjectGuideSlide />,
+    <CertificationStrategySlide />,
+    <CareerPathSlide />,
+    <FAQSlide />,
+    <ResourceHubSlide />
   ];
 
   const slideTitles = [
@@ -25,7 +37,13 @@ const Index = () => {
     "지금 당장 해야 할 3가지",
     "실전 액션 플랜",
     "클라우드 통계",
-    "실무에서 자주 사용하는 도구들"
+    "실무에서 자주 사용하는 도구들",
+    "학습 로드맵",
+    "실습 프로젝트 가이드",
+    "자격증 취득 전략",
+    "커리어 성장 로드맵",
+    "자주 묻는 질문",
+    "학습 리소스 허브"
   ];
 
   const jsonLd = {
